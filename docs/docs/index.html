@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Market summary — LJ</title>
+  <style>
+    :root { --bg:#0F0F0F; --text:#fff; }
+    body { background:var(--bg); color:var(--text); display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    .container { width:550px; max-width:95%; }
+    .tradingview-widget-container { width:100%; }
+    .tradingview-widget-container__widget { width:100%; height:550px; }
+    @media (max-width:600px){ .tradingview-widget-container__widget { height:420px; } }
+  </style>
+</head>
+<body>
+  <!-- TradingView Widget BEGIN -->
+  <div class="container">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank">
+          <span class="blue-text">Market summary</span>
+        </a><span class="trademark"> by TradingView</span>
+      </div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+      {
+        "colorTheme": "dark",
+        "locale": "en",
+        "largeChartUrl": "",
+        "isTransparent": false,
+        "showSymbolLogo": true,
+        "backgroundColor": "#0F0F0F",
+        "support_host": "https://www.tradingview.com",
+        "width": "100%",
+        "height": 550,
+        "symbolsGroups": [
+          {
+            "name": "LUNDIN GROUP",
+            "symbols": [
+              {"name": "TSX:LUN","displayName":""},
+              {"name": "TSX:LUG","displayName":""},
+              {"name": "TSX:NGEX","displayName":""},
+              {"name": "TSXV:LUNR","displayName":""},
+              {"name": "TSX:FDY","displayName":""},
+              {"name": "TSXV:FWZ","displayName":""},
+              {"name": "TSX:IPCO","displayName":""},
+              {"name": "TSXV:SNM","displayName":""},
+              {"name": "TSX:MAU","displayName":""},
+              {"name": "TSX:LUC","displayName":""}
+            ]
+          },
+          {
+            "name": "ADERA INVESTMENTS",
+            "symbols": [
+              {"name": "TSXV:KRY","displayName":""},
+              {"name": "ASX:SKY","displayName":""},
+              {"name": "ASX:VBX","displayName":""},
+              {"name": "ASX:A1G","displayName":""},
+              {"name": "ASX:AUE","displayName":""}
+            ]
+          },
+          {
+            "name": "COMO",
+            "symbols": [
+              {"name": "OANDA:XAUUSD","displayName":""},
+              {"name": "TVC:SILVER","displayName":""},
+              {"name": "CAPITALCOM:COPPER","displayName":""},
+              {"name": "PEPPERSTONE:ZINC","displayName":""},
+              {"name": "PEPPERSTONE:ALUMINIUM","displayName":""}
+            ]
+          }
+        ]
+      }
+      </script>
+    </div>
+  </div>
+  <!-- TradingView Widget END -->
+</body>
+</html>
